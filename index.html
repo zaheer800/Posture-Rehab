@@ -14,6 +14,7 @@
   .rule { background: #ffe9e9; border-left: 6px solid #ff4d4d; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
   .tip  { background: #e8f6ff; border-left: 6px solid #3aa0ff; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
   img.exercise { max-width: 220px; border-radius: 8px; margin-top: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+  .exercise-svg { width: 220px; height: auto; border-radius: 8px; background: #f0f7ff; margin-top: 6px; display: block; }
   .exercise-block { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
   .exercise-item { max-width: 240px; }
 
@@ -88,15 +89,107 @@
     <div class="exercise-block">
       <div class="exercise-item">
         <p><strong>Hamstring Stretch</strong></p>
-        <img class="exercise" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Seated_hamstring_stretch.jpg" alt="Hamstring stretch">
+        <!-- Seated hamstring stretch: sit on floor, legs extended, reach toward feet -->
+        <svg class="exercise-svg" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Seated hamstring stretch illustration">
+          <!-- floor -->
+          <line x1="10" y1="130" x2="210" y2="130" stroke="#ccc" stroke-width="2"/>
+          <!-- torso leaning forward -->
+          <line x1="80" y1="125" x2="120" y2="75" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- head -->
+          <circle cx="125" cy="67" r="12" fill="#e8f6ff" stroke="#1a4d8f" stroke-width="3"/>
+          <!-- left leg extended -->
+          <line x1="80" y1="125" x2="30" y2="127" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- right leg extended -->
+          <line x1="80" y1="125" x2="155" y2="127" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- left arm reaching toward feet -->
+          <line x1="110" y1="90" x2="40" y2="118" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- right arm reaching toward feet -->
+          <line x1="110" y1="90" x2="155" y2="118" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- foot left -->
+          <line x1="30" y1="127" x2="18" y2="122" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- foot right -->
+          <line x1="155" y1="127" x2="167" y2="122" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- arrow showing reach direction -->
+          <line x1="155" y1="115" x2="168" y2="115" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowR)"/>
+          <defs>
+            <marker id="arrowR" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#ff6b35"/>
+            </marker>
+          </defs>
+          <text x="110" y="150" text-anchor="middle" font-size="11" fill="#555">Reach toward toes, hold 20s</text>
+        </svg>
       </div>
       <div class="exercise-item">
         <p><strong>Calf Stretch</strong></p>
-        <img class="exercise" src="https://upload.wikimedia.org/wikipedia/commons/1/12/Calf_stretch_wall.jpg" alt="Calf stretch">
+        <!-- Standing calf stretch: hands on wall, back leg straight, heel flat -->
+        <svg class="exercise-svg" viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calf stretch illustration">
+          <!-- wall -->
+          <rect x="8" y="10" width="12" height="155" fill="#dce8f5" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- floor -->
+          <line x1="8" y1="163" x2="210" y2="163" stroke="#ccc" stroke-width="2"/>
+          <!-- body (leaning slightly) -->
+          <!-- hips -->
+          <circle cx="100" cy="110" r="5" fill="#1a4d8f"/>
+          <!-- torso -->
+          <line x1="100" y1="110" x2="75" y2="65" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- head -->
+          <circle cx="70" cy="55" r="12" fill="#e8f6ff" stroke="#1a4d8f" stroke-width="3"/>
+          <!-- left arm to wall -->
+          <line x1="85" y1="80" x2="20" y2="75" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- right arm to wall -->
+          <line x1="85" y1="80" x2="20" y2="95" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- front leg (bent) -->
+          <line x1="100" y1="110" x2="85" y2="140" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <line x1="85" y1="140" x2="80" y2="162" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- back leg (straight, heel down) -->
+          <line x1="100" y1="110" x2="145" y2="130" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <line x1="145" y1="130" x2="155" y2="162" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- back foot flat -->
+          <line x1="155" y1="162" x2="175" y2="162" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- heel label arrow -->
+          <line x1="162" y1="162" x2="162" y2="150" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowUp)"/>
+          <defs>
+            <marker id="arrowUp" markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto">
+              <path d="M0,6 L3,0 L6,6 Z" fill="#ff6b35"/>
+            </marker>
+          </defs>
+          <text x="110" y="178" text-anchor="middle" font-size="11" fill="#555">Heel flat, back leg straight</text>
+        </svg>
       </div>
       <div class="exercise-item">
         <p><strong>Glute Stretch</strong></p>
-        <img class="exercise" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Figure_four_stretch.jpg" alt="Glute stretch">
+        <!-- Figure-four glute stretch: seated in chair, ankle on opposite knee -->
+        <svg class="exercise-svg" viewBox="0 0 220 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Glute figure-four stretch illustration">
+          <!-- chair seat -->
+          <rect x="50" y="110" width="110" height="10" rx="3" fill="#c8ddf5" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- chair back -->
+          <rect x="140" y="55" width="10" height="60" rx="3" fill="#c8ddf5" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- chair legs -->
+          <line x1="60" y1="120" x2="58" y2="160" stroke="#1a4d8f" stroke-width="2"/>
+          <line x1="150" y1="120" x2="152" y2="160" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- floor -->
+          <line x1="20" y1="160" x2="200" y2="160" stroke="#ccc" stroke-width="2"/>
+          <!-- torso -->
+          <line x1="100" y1="110" x2="105" y2="62" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- head -->
+          <circle cx="107" cy="50" r="12" fill="#e8f6ff" stroke="#1a4d8f" stroke-width="3"/>
+          <!-- right leg down (supporting) -->
+          <line x1="90" y1="110" x2="88" y2="150" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <line x1="88" y1="150" x2="75" y2="158" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- left leg crossed (figure-four) -->
+          <line x1="110" y1="110" x2="130" y2="100" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <line x1="130" y1="100" x2="88" y2="93" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- ankle resting on knee marker -->
+          <circle cx="88" cy="93" r="5" fill="#ff6b35" opacity="0.8"/>
+          <!-- lean forward arrow -->
+          <line x1="80" y1="75" x2="65" y2="88" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowD)"/>
+          <defs>
+            <marker id="arrowD" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto">
+              <path d="M0,0 L3,6 L6,0 Z" fill="#ff6b35"/>
+            </marker>
+          </defs>
+          <text x="110" y="178" text-anchor="middle" font-size="11" fill="#555">Ankle on knee, lean forward</text>
+        </svg>
       </div>
     </div>
   </div>
@@ -121,7 +214,44 @@
     <div class="exercise-block">
       <div class="exercise-item">
         <p><strong>Sciatic Nerve Glide</strong></p>
-        <img class="exercise" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Sciatic_nerve_glide_seated.gif" alt="Sciatic nerve glide">
+        <!-- Seated sciatic nerve glide: sit upright, extend one leg, flex foot -->
+        <svg class="exercise-svg" viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sciatic nerve glide illustration">
+          <!-- chair seat -->
+          <rect x="50" y="110" width="110" height="10" rx="3" fill="#c8ddf5" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- chair back -->
+          <rect x="140" y="55" width="10" height="60" rx="3" fill="#c8ddf5" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- chair legs -->
+          <line x1="60" y1="120" x2="58" y2="165" stroke="#1a4d8f" stroke-width="2"/>
+          <line x1="150" y1="120" x2="152" y2="165" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- floor -->
+          <line x1="20" y1="165" x2="200" y2="165" stroke="#ccc" stroke-width="2"/>
+          <!-- torso upright -->
+          <line x1="100" y1="110" x2="100" y2="60" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- head -->
+          <circle cx="100" cy="48" r="12" fill="#e8f6ff" stroke="#1a4d8f" stroke-width="3"/>
+          <!-- arms resting on thighs -->
+          <line x1="100" y1="78" x2="78" y2="105" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <line x1="100" y1="78" x2="122" y2="105" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- right leg bent normally -->
+          <line x1="110" y1="110" x2="112" y2="155" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <line x1="112" y1="155" x2="128" y2="163" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- left leg EXTENDED (nerve glide) -->
+          <line x1="90" y1="110" x2="45" y2="105" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <line x1="45" y1="105" x2="22" y2="120" stroke="#1a4d8f" stroke-width="4" stroke-linecap="round"/>
+          <!-- foot flexed upward -->
+          <line x1="22" y1="120" x2="14" y2="110" stroke="#1a4d8f" stroke-width="3" stroke-linecap="round"/>
+          <!-- motion arrow on extended leg -->
+          <line x1="40" y1="95" x2="22" y2="100" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowL)"/>
+          <defs>
+            <marker id="arrowL" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto">
+              <path d="M6,0 L0,3 L6,6 Z" fill="#ff6b35"/>
+            </marker>
+          </defs>
+          <!-- label -->
+          <text x="110" y="183" text-anchor="middle" font-size="11" fill="#555">Extend leg, flex foot – 10 reps</text>
+          <!-- repeat symbol -->
+          <text x="110" y="196" text-anchor="middle" font-size="10" fill="#888">Slowly lower and raise</text>
+        </svg>
       </div>
     </div>
   </div>
